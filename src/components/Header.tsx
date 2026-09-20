@@ -13,6 +13,7 @@ import {
   Terminal,
 } from 'lucide-react';
 import { siteConfig } from '@/config/site';
+import { BrandLogoMark } from '@/components/BrandLogo';
 import { Button } from '@/components/ui/button';
 
 interface HeaderProps {
@@ -47,12 +48,7 @@ export function Header({
     setTheme(isDark ? 'light' : 'dark');
   };
 
-  // Domain-specific concise navigation labels
-  const navLabels: Record<string, string> = {
-    cockpit: 'Academy Cockpit',
-    pipeline: 'AI Telemetry',
-    records: 'Athlete Roster',
-  };
+
 
   return (
     <header className="sticky top-0 z-40 w-full border-b border-[var(--color-border)] bg-[var(--color-surface)]/95 backdrop-blur-md">
@@ -66,9 +62,7 @@ export function Header({
           onKeyDown={(e) => e.key === 'Enter' && onNavigate('hero')}
           className="flex items-center gap-2.5 shrink-0 cursor-pointer select-none"
         >
-          <div className="flex h-7 w-7 items-center justify-center rounded-[6px] bg-gradient-to-br from-[#533AFD] via-[#432DE0] to-[#0D1738] text-white shadow-xs font-bold shrink-0 border border-white/20">
-            <Bot className="h-4 w-4" />
-          </div>
+          <BrandLogoMark className="h-7 w-7" />
           <span className="text-[15px] font-bold tracking-tight text-[var(--color-text-primary)] font-sans">
             {siteConfig.name}
           </span>
@@ -78,7 +72,7 @@ export function Header({
         <nav className="hidden md:flex items-center gap-6 lg:gap-8">
           {siteConfig.primaryNav.map((item) => {
             const isActive = activeSection === item.id;
-            const label = navLabels[item.id] || item.label;
+            const label = item.label;
             return (
               <button
                 key={item.id}
@@ -192,7 +186,7 @@ export function Header({
       <div className="md:hidden border-t border-[var(--color-border)] bg-[var(--color-panel-subtle)] py-2 px-4 overflow-x-auto no-scrollbar flex items-center gap-4 flex-nowrap">
         {siteConfig.primaryNav.map((item) => {
           const isActive = activeSection === item.id;
-          const label = navLabels[item.id] || item.label;
+          const label = item.label;
           return (
             <button
               key={item.id}

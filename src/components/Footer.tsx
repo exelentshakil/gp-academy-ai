@@ -15,6 +15,7 @@ import {
   Sparkles,
 } from 'lucide-react';
 import { siteConfig } from '@/config/site';
+import { BrandLogoMark } from '@/components/BrandLogo';
 
 export function Footer() {
   return (
@@ -30,14 +31,12 @@ export function Footer() {
             <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-panel-subtle)] p-4 flex flex-col justify-between flex-1 space-y-3.5 text-xs">
               <div className="space-y-3">
                 <div className="flex items-center gap-2.5">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-600 to-teal-700 text-white font-black text-sm shadow-xs shrink-0">
-                    <Sparkles className="h-4 w-4" />
-                  </div>
+                  <BrandLogoMark className="h-8 w-8" />
                   <div className="flex items-center gap-2 min-w-0 flex-wrap">
                     <span className="text-base font-extrabold tracking-tight text-[var(--color-text-primary)] whitespace-nowrap">
                       {siteConfig.name}
                     </span>
-                    <span className="rounded-full bg-emerald-100 dark:bg-emerald-950 px-2 py-0.5 text-[10px] font-mono font-bold text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800 whitespace-nowrap shrink-0">
+                    <span className="rounded-full bg-[#533AFD]/10 dark:bg-[#7A68FF]/20 px-2.5 py-0.5 text-[10px] font-mono font-bold text-[#533AFD] dark:text-[#7A68FF] border border-[#533AFD]/20 dark:border-[#7A68FF]/30 whitespace-nowrap shrink-0">
                       {siteConfig.badge}
                     </span>
                   </div>
