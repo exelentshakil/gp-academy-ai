@@ -70,7 +70,7 @@ export function StripeHero({
             {/* Master Stripe Two-Tone Typography Headline */}
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-semibold tracking-[-0.03em] text-[var(--color-text-primary)] leading-[1.12]">
-                AI-native platform to 
+                AI-native platform to{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#635BFF] via-[#7A68FF] to-[#00D4FF] font-bold">
                   scale your wingfoil academy.
                 </span>

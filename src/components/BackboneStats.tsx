@@ -13,57 +13,57 @@ interface BackboneStat {
 
 const STATS: BackboneStat[] = [
   {
-    value: '$42.8M',
-    label: 'in audited commercial sponsorship inventory under management',
+    value: '$148.5k ARR',
+    label: 'in recurring digital subscriptions and video masterclass passes',
     color: '#533AFD',
     sparkline: [
-      { t: 'Q1', v: 22.4 },
-      { t: 'Q2', v: 28.5 },
-      { t: 'Q3', v: 26.8 },
-      { t: 'Q4', v: 34.2 },
-      { t: 'Q5', v: 38.6 },
-      { t: 'Q6', v: 42.8 },
+      { t: 'Q1', v: 42.4 },
+      { t: 'Q2', v: 68.5 },
+      { t: 'Q3', v: 92.8 },
+      { t: 'Q4', v: 118.2 },
+      { t: 'Q5', v: 134.6 },
+      { t: 'Q6', v: 148.5 },
     ],
   },
   {
-    value: '5 Agents',
-    label: 'connected across the lifecycle with human-in-the-loop approvals',
+    value: '1,240 Riders',
+    label: 'coached across Lake Garda, Sardinia, and international clinics',
     color: '#057A55',
     sparkline: [
-      { t: 'Stage 1', v: 1.0 },
-      { t: 'Stage 2', v: 2.4 },
-      { t: 'Stage 3', v: 2.2 },
-      { t: 'Stage 4', v: 3.8 },
-      { t: 'Stage 5', v: 4.4 },
-      { t: 'Stage 6', v: 5.0 },
+      { t: 'Stage 1', v: 220 },
+      { t: 'Stage 2', v: 480 },
+      { t: 'Stage 3', v: 710 },
+      { t: 'Stage 4', v: 940 },
+      { t: 'Stage 5', v: 1120 },
+      { t: 'Stage 6', v: 1240 },
     ],
   },
   {
-    value: '99.4%',
-    label: 'contract obligation delivery rate across stadium and broadcast events',
+    value: '94.2%',
+    label: 'retention rate on Pro Member video feedback and technique roadmaps',
     color: '#D97706',
-    domain: [97.5, 100],
+    domain: [90, 100],
     sparkline: [
-      { t: 'W1', v: 98.1 },
-      { t: 'W2', v: 99.2 },
-      { t: 'W3', v: 98.7 },
-      { t: 'W4', v: 99.6 },
-      { t: 'W5', v: 99.1 },
-      { t: 'W6', v: 99.4 },
+      { t: 'W1', v: 91.1 },
+      { t: 'W2', v: 92.4 },
+      { t: 'W3', v: 93.7 },
+      { t: 'W4', v: 94.6 },
+      { t: 'W5', v: 93.9 },
+      { t: 'W6', v: 94.2 },
     ],
   },
   {
-    value: '4.8 min',
-    label: 'average turnaround from asset intake to client-ready pitch deck',
+    value: '78 ms',
+    label: 'average turnaround from rider video intake to corrective coaching drill',
     color: '#0d9488',
-    domain: [0, 52],
+    domain: [50, 120],
     sparkline: [
-      { t: 'Run 1', v: 48.0 },
-      { t: 'Run 2', v: 32.5 },
-      { t: 'Run 3', v: 22.1 },
-      { t: 'Run 4', v: 14.8 },
-      { t: 'Run 5', v: 8.2 },
-      { t: 'Run 6', v: 4.8 },
+      { t: 'Run 1', v: 112.0 },
+      { t: 'Run 2', v: 98.5 },
+      { t: 'Run 3', v: 91.1 },
+      { t: 'Run 4', v: 84.8 },
+      { t: 'Run 5', v: 80.2 },
+      { t: 'Run 6', v: 78.0 },
     ],
   },
 ];
@@ -81,10 +81,10 @@ export function BackboneStats() {
         {/* Centered H2 Title with Stripe Opacity Hierarchy */}
         <div className="text-center max-w-2xl mx-auto mb-10">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-[-0.025em] text-[var(--color-text-primary)]">
-            The backbone of modern commercial sponsorship
+            The digital business engine behind GP Academy
           </h2>
           <p className="mt-2 text-base text-[#2E3C4E] dark:text-slate-300 leading-relaxed">
-            Connected AI agents delivering institutional valuation accuracy and zero missed deliverables at scale.
+            Transforming pro athletic wingfoil coaching into recurring subscription revenue, high-ticket clinic bookings, and automated flight feedback.
           </p>
         </div>
 

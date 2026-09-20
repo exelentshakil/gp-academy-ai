@@ -118,7 +118,7 @@ export function MetricsGrid() {
                 if (active && payload && payload.length) {
                   return (
                     <div className="rounded-[4px] bg-[var(--color-surface)] border border-[var(--color-border)] px-2.5 py-1 text-xs font-medium shadow-xs text-[var(--color-text-primary)]">
-                      <span className="font-bold text-[#533AFD] dark:text-[#7A68FF]">${payload[0].value}M</span> FMV
+                      <span className="font-bold text-[#533AFD] dark:text-[#7A68FF]">${payload[0].value}k</span> ARR
                     </div>
                   );
                 }
@@ -154,7 +154,7 @@ export function MetricsGrid() {
                 if (active && payload && payload.length) {
                   return (
                     <div className="rounded-[4px] bg-[var(--color-surface)] border border-[var(--color-border)] px-2.5 py-1 text-xs font-medium shadow-xs text-[var(--color-text-primary)]">
-                      <span className="font-bold text-[#057A55] dark:text-emerald-400">${payload[0].value}M</span> Pipeline
+                      <span className="font-bold text-[#057A55] dark:text-emerald-400">{payload[0].value}k</span> Active Riders
                     </div>
                   );
                 }
@@ -191,7 +191,7 @@ export function MetricsGrid() {
                   const data = payload[0].payload;
                   return (
                     <div className="rounded-[4px] bg-[var(--color-surface)] border border-[var(--color-border)] px-2.5 py-1 text-xs font-medium shadow-xs text-[var(--color-text-primary)]">
-                      {data.t}: <span className="font-bold text-amber-600 dark:text-amber-400">{data.v}%</span> SLA
+                      {data.t}: <span className="font-bold text-amber-600 dark:text-amber-400">{data.v}%</span> Flight Stability
                     </div>
                   );
                 }
@@ -227,7 +227,7 @@ export function MetricsGrid() {
                 const data = payload[0].payload;
                 return (
                   <div className="rounded-[4px] bg-[var(--color-surface)] border border-[var(--color-border)] px-2.5 py-1 text-xs font-medium shadow-xs text-[var(--color-text-primary)]">
-                    {data.t}: <span className="font-bold text-teal-600 dark:text-teal-400">{data.v} min</span> Turnaround
+                    {data.t}: <span className="font-bold text-teal-600 dark:text-teal-400">{data.v}ms</span> AI Latency
                   </div>
                 );
               }
@@ -259,13 +259,16 @@ export function MetricsGrid() {
               key={metric.id}
               className="rounded-[6px] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-2xs hover:shadow-xs transition-shadow flex flex-col justify-between overflow-hidden"
             >
-              {/* Card Header: Category Eyebrow + Badge */}
-              <div className="p-4 pb-2 flex flex-row items-center justify-between space-y-0">
-                <span className="text-xs font-bold uppercase tracking-wider text-[var(--color-text-secondary)]">
+              {/* Card Header: Category Eyebrow + Badge (Anti-Collision Isolated) */}
+              <div className="p-4 pb-2 flex items-center justify-between gap-2 min-w-0">
+                <span 
+                  className="text-xs font-bold uppercase tracking-wider text-[var(--color-text-secondary)] truncate min-w-0"
+                  title={metric.title}
+                >
                   {metric.title}
                 </span>
                 <span
-                  className={`inline-flex items-center rounded-[4px] px-2.5 py-0.5 text-xs font-semibold border ${badgeStyle} shrink-0`}
+                  className={`inline-flex items-center rounded-[4px] px-2 py-0.5 text-[11px] font-semibold border ${badgeStyle} shrink-0 whitespace-nowrap`}
                 >
                   <Icon className="h-3 w-3 mr-1 shrink-0" />
                   {metric.badge}
@@ -314,7 +317,7 @@ export function MetricsGrid() {
               </span>
             </div>
             <p className="text-xs sm:text-sm text-[var(--color-text-secondary)] mt-1">
-              Real-time context serialization &amp; throughput across Asset Audit → Brand Match → Deck Synth → Obligation Guard
+              Real-time pose audit &amp; coaching synthesis across Video Intake → Foil Pitch → Angle of Attack → Stripe Billing
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-4 text-xs sm:text-[13px] text-[var(--color-text-secondary)]">

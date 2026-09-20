@@ -47,12 +47,11 @@ export function Header({
     setTheme(isDark ? 'light' : 'dark');
   };
 
-  // Concise single-word/two-word navigation labels that never break
+  // Domain-specific concise navigation labels
   const navLabels: Record<string, string> = {
-    cockpit: 'Cockpit',
-    pipeline: 'Lifecycle Engine',
-    workspaces: 'Workspaces',
-    records: 'Contracts',
+    cockpit: 'Academy Cockpit',
+    pipeline: 'AI Telemetry',
+    records: 'Athlete Roster',
   };
 
   return (

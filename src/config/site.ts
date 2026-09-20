@@ -77,7 +77,7 @@ export const siteConfig: SiteConfig = {
       change: '+34.2% MoM',
       trend: 'up',
       subtext: '482 active international riders',
-      badge: 'Stripe Billing Live',
+      badge: 'Stripe Active',
     },
     {
       id: 'athletes',
@@ -86,7 +86,7 @@ export const siteConfig: SiteConfig = {
       change: '+18.6% vs Q2',
       trend: 'up',
       subtext: 'Lake Garda, Sardinia & Tarifa clinics',
-      badge: 'Pro Tier 94% Retention',
+      badge: '94% Retention',
     },
     {
       id: 'ai-sessions',
@@ -95,7 +95,7 @@ export const siteConfig: SiteConfig = {
       change: 'Sub-90ms Analysis',
       trend: 'up',
       subtext: 'Hydrofoil pitch, yaw & stance telemetry',
-      badge: 'Biomechanics Engine',
+      badge: 'Biomechanics',
     },
     {
       id: 'conversion',
@@ -104,7 +104,7 @@ export const siteConfig: SiteConfig = {
       change: '+2.1x vs Baseline',
       trend: 'up',
       subtext: 'Landing page to masterclass checkout',
-      badge: 'Stripe In-App Active',
+      badge: 'Funnel 2.1x',
     },
   ],
   workflow: {
